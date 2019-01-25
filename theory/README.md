@@ -79,4 +79,4 @@ A     B     C      carry   sum
 1     1     1        1      1
 ```
 * SUM = (A xor B) xor C
-* CARRY = ?
+* CARRY = (A && B) || (B && C) || (A && C)
